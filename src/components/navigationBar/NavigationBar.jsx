@@ -12,7 +12,7 @@ const NavigationBar = () => {
   const [page, setPage] = useContext(PageContext)
 
   return (
-    <div className="main__right_navigation-bar">
+    <div className="navigation-bar">
       <FaHome
         color={page === 0 ? "white" : "black"}
         cursor="pointer"

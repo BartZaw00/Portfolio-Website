@@ -2,9 +2,10 @@ import React from "react";
 import { MdCircle } from "react-icons/md";
 
 import { useContext } from "react";
+import { PageContext } from "../../App";
 
 import "./sidebar.css";
-import { PageContext } from "../../App";
+
 
 const Sidebar = () => {
   const [page, setPage] = useContext(PageContext);

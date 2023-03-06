@@ -1,5 +1,5 @@
 import React from "react";
-import { Feed, Sidebar } from "../../components";
+import { SectionContent, Sidebar } from "../../components";
 
 import "./sectionCard.css";
 
@@ -7,7 +7,7 @@ const SectionCard = () => {
   return (
     <div className="section">
       <Sidebar />
-      <Feed />
+      <SectionContent />
     </div>
   );
 };

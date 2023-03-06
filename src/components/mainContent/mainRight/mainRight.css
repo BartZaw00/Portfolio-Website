@@ -1,0 +1,5 @@
+.main__right {
+  flex: 1;
+  background: url("/src/assets/cv-main-card.png");
+  background-size: cover;
+}

@@ -1,0 +1,31 @@
+.section__right_content_description_resume {
+  margin-top: 60px;
+  display: flex;
+  gap: 50px;
+}
+
+.section__right_content_description_resume_subheading {
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.section__right_content_description_resume_details_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.section__right_content_description_resume_details_detail_time {
+  padding: 5px 10px;
+  background-color: rgb(250, 191, 48);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.section__right_content_description_resume_divider {
+  border-left: 3px dotted #ccc;
+}
