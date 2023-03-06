@@ -1,13 +1,13 @@
 .section__right_content_description_resume {
   margin-top: 60px;
   display: flex;
-  gap: 50px;
+  justify-content: space-around;
 }
 
 .section__right_content_description_resume_subheading {
   color: #111;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-family: "Viga", sans-serif;
+  font-weight: 900;
   font-size: 40px;
   margin-bottom: 10px;
 }
@@ -24,6 +24,19 @@
   background-color: rgb(250, 191, 48);
   color: #fff;
   border-radius: 10px;
+}
+
+.section__right_content_description_resume_details_detail_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section__right_content_description_resume_details_detail_title--weightLow {
+  font-weight: 500;
+}
+
+.section__right_content_description_resume_details_detail_list {
+  margin-bottom: 20px;
 }
 
 .section__right_content_description_resume_divider {

@@ -1,0 +1,61 @@
+.section__right_content_description_portfolio {
+}
+
+.section__right_content_description_portfolio_header {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.section__right_content_description_portfolio_header_tag {
+  color: #111;
+  font-family: "Viga", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.section__right_content_description_portfolio_details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 50px;
+}
+
+.section__right_content_description_portfolio_details_box {
+  position: relative;
+  max-width: 35%;
+}
+
+.section__right_content_description_portfolio_details_box_photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section__right_content_description_portfolio_details_box_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+  opacity: 0;
+  transition: 1s;
+}
+
+.section__right_content_description_portfolio_details_box_photo:hover
+  .section__right_content_description_portfolio_details_box_overlay {
+  opacity: 1;
+}
+
+.section__right_content_description_portfolio_details_box_description {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
