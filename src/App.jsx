@@ -1,24 +1,24 @@
-import { useState } from "react";
-import { BsFillPersonFill } from "react-icons/bs";
-import { MdWork, MdDesignServices, MdContactPhone } from "react-icons/md";
-import { FaHome } from "react-icons/fa";
+import { createContext, useEffect, useState } from "react";
+import { NavigationBar } from "./components";
 
 import { MainCard, SectionCard } from "./containers";
 
 import "./App.css";
 
+export const PageContext = createContext();
+
 function App() {
+  const [page, setPage] = useState(0);
+
+  useEffect(() => {
+    console.log(page);
+  }, [page]);
+
   return (
-    <>
-      <SectionCard />
-      <div className="main__right_navigation-bar">
-        <FaHome color="white" />
-        <BsFillPersonFill />
-        <MdWork />
-        <MdDesignServices />
-        <MdContactPhone />
-      </div>
-    </>
+    <PageContext.Provider value={[page, setPage]}>
+      {page ? <SectionCard /> : <MainCard />}
+      <NavigationBar />
+    </PageContext.Provider>
   );
 }
 

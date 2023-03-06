@@ -1,0 +1,13 @@
+.main__right_navigation-bar {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0; /* check it */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 15px;
+  border-radius: 30px;
+  background-color: rgb(250, 191, 48);
+}
