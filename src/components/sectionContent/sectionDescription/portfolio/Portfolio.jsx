@@ -6,7 +6,7 @@ import "./portfolio.css";
 const allTabs = new Set(portfolioData.map((item) => item.category));
 
 const Portfolio = () => {
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState(1);
 
   return (
     <div className="section__right_content_description_portfolio">
