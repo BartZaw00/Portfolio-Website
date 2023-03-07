@@ -8,9 +8,7 @@ const Resume = () => {
     <div className="section__right_content_description_resume">
       {resumeData.map((item, index) => (
         <React.Fragment key={item.id}>
-          <div
-            className="section__right_content_description_resume_details"
-          >
+          <div className="section__right_content_description_resume_details">
             <h6 className="section__right_content_description_resume_subheading">
               {item.title}
             </h6>
@@ -50,9 +48,6 @@ const Resume = () => {
       ))}
     </div>
   );
-  
-  
-  
 
   {
     /* <div className="section__right_content_description_resume_divider"></div>

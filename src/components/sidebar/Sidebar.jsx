@@ -1,6 +1,8 @@
 import React from "react";
 import { MdCircle } from "react-icons/md";
 
+import cvSectionCard from "../../assets/cv-section-card.png";
+
 import { useContext } from "react";
 import { PageContext } from "../../App";
 
@@ -12,7 +14,7 @@ const Sidebar = () => {
 
   return (
     <div className="section__left">
-      <img src="/src/assets/cv-section-card.png" alt="profile-photo" />
+      <img src={cvSectionCard} alt="profile-photo" />
       <div className="section__left_menu">
         <MdCircle />
         {categories.map((category) => {

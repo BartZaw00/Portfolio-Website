@@ -13,6 +13,7 @@ const Portfolio = () => {
       <div className="section__right_content_description_portfolio_header">
         {Array.from(allTabs).map((item, index) => (
           <a
+            key={index}
             style={{ color: tab === index ? "rgb(250, 191, 48)" : "#000" }}
             className="section__right_content_description_portfolio_header_tag"
             onClick={() => setTab(index)}
@@ -36,7 +37,7 @@ const Portfolio = () => {
                   src={item.img}
                   alt={item.title}
                 />
-                <div class="section__right_content_description_portfolio_details_box_overlay"></div>
+                <div className="section__right_content_description_portfolio_details_box_overlay"></div>
                 <div className="section__right_content_description_portfolio_details_box_description">
                   <h3>{item.title}</h3>
                   <div className="section__right_content_description_portfolio_details_box_description_divider"></div>

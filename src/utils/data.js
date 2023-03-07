@@ -58,6 +58,12 @@ export const resumeData = [
   },
 ];
 
+import html_css_1 from "../assets/html_css_1.png";
+import js_1 from "../assets/js_1.png";
+import js_2 from "../assets/js_2.png";
+import js_3 from "../assets/js_3.png";
+import react_1 from "../assets/react_1.png";
+
 export const portfolioData = [
   {
     id: 1,
@@ -66,7 +72,7 @@ export const portfolioData = [
   {
     id: 2,
     category: "JAVASCRIPT",
-    img: "/src/assets/js_1.png",
+    img: js_1,
     title: "Covid in USA",
     description:
       "Data visualization about COVID-19 cases and deaths in USA depending on chosen date.",
@@ -76,7 +82,7 @@ export const portfolioData = [
   {
     id: 3,
     category: "HTML + CSS",
-    img: "/src/assets/html_css_1.png",
+    img: html_css_1,
     title: "AI Areas Section",
     description: "A section of a page with 4 boxes containing AI areas",
     url: "https://ai-areas-section.netlify.app/",
@@ -85,7 +91,7 @@ export const portfolioData = [
   {
     id: 4,
     category: "JAVASCRIPT",
-    img: "/src/assets/js_2.png",
+    img: js_2,
     title: "Quiz App",
     description: "A quiz containing 10 questions about football knowledge",
     url: "https://quiz-app-football.netlify.app/",
@@ -94,7 +100,7 @@ export const portfolioData = [
   {
     id: 5,
     category: "JAVASCRIPT",
-    img: "/src/assets/js_3.png",
+    img: js_3,
     title: "Calculator App",
     description: "A calculator that allows to do several math operations",
     url: "https://calculator-app-bartzaw00.netlify.app",
