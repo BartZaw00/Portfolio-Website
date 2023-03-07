@@ -24,11 +24,17 @@
   flex-basis: 35%;
   position: relative;
   cursor: pointer;
+  transition: 1s;
+}
+
+.section__right_content_description_portfolio_details_box:hover {
+  transform: translateY(-5px);
 }
 
 .section__right_content_description_portfolio_details_box_photo {
   width: 100%;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .section__right_content_description_portfolio_details_box_overlay {
@@ -67,7 +73,8 @@
   width: 60%;
 }
 
-.section__right_content_description_portfolio_details_box:hover .section__right_content_description_portfolio_details_box_description {
+.section__right_content_description_portfolio_details_box:hover
+  .section__right_content_description_portfolio_details_box_description {
   bottom: 25%;
   opacity: 1;
 }
