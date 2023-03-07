@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { PageContext } from "../../../App";
 
+import { categories } from "../../../utils/data";
 import "./sectionHeader.css";
 
 const SectionHeader = () => {
@@ -8,23 +9,9 @@ const SectionHeader = () => {
 
   return (
     <div className="section__right_content_heading">
-      {(() => {
-        switch (page) {
-          case 0:
-            return <h1 className="section__right_content_heading_header">HOME</h1>
-          case 1:
-            return <h1 className="section__right_content_heading_header">ABOUT ME</h1>
-          case 2:
-            return <h1 className="section__right_content_heading_header">RESUME</h1>
-          case 3:
-            return <h1 className="section__right_content_heading_header">PORTFOLIO</h1>
-          case 4:
-            return <h1 className="section__right_content_heading_header">CONTACT</h1>
-          default:
-            return "ERROR 404";
-        }
-      })()}
-      {/* The parentheses () around the function definition in the code are used to create an immediately-invoked function expression (IIFE). */}
+      <h1 className="section__right_content_heading_header">
+        {categories[page].name}
+      </h1>
     </div>
   );
 };

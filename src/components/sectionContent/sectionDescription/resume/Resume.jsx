@@ -1,29 +1,61 @@
 import React from "react";
-import { GiConfirmed } from "react-icons/gi";
 
+import { resumeData } from "../../../../utils/data";
 import "./resume.css";
 
 const Resume = () => {
   return (
     <div className="section__right_content_description_resume">
-      <div className="section__right_content_description_resume_details">
-        <h6 className="section__right_content_description_resume_subheading">
-          EDUCATION
-        </h6>
-        <div className="section__right_content_description_resume_details_detail">
-          <span className="section__right_content_description_resume_details_detail_time">
-            October 2019 - now
-          </span>
-          <span className="section__right_content_description_resume_details_detail_title">
-            Applied Computer Science | <br />
-            <span className="section__right_content_description_resume_details_detail_title section__right_content_description_resume_details_detail_title--weightLow">
-              {" "}
-              Lodz University of Technology
-            </span>
-          </span>
-        </div>
-      </div>
-      <div className="section__right_content_description_resume_divider"></div>
+      {resumeData.map((item, index) => (
+        <React.Fragment key={item.id}>
+          <div
+            className="section__right_content_description_resume_details"
+          >
+            <h6 className="section__right_content_description_resume_subheading">
+              {item.title}
+            </h6>
+            {item.details.map((detail) => (
+              <div
+                key={detail.id}
+                className="section__right_content_description_resume_details_detail"
+              >
+                <span className="section__right_content_description_resume_details_detail_time">
+                  {detail.time}
+                </span>
+                <span className="section__right_content_description_resume_details_detail_title">
+                  {detail.position} | <br />
+                  <span className="section__right_content_description_resume_details_detail_title section__right_content_description_resume_details_detail_title--weightLow">
+                    {detail.organization}
+                  </span>
+                </span>
+                {detail.skills && (
+                  <ul className="section__right_content_description_resume_details_detail_list">
+                    {detail.skills.map((skill, index) => (
+                      <li
+                        key={index}
+                        className="section__right_content_description_resume_details_detail_list_element"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+          {index !== resumeData.length - 1 && (
+            <div className="section__right_content_description_resume_divider"></div>
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+  
+  
+  
+
+  {
+    /* <div className="section__right_content_description_resume_divider"></div>
       <div className="section__right_content_description_resume_details">
         <h6 className="section__right_content_description_resume_subheading">
           EXPERIENCE
@@ -86,9 +118,8 @@ const Resume = () => {
             <li>Preparation of match reports</li>
           </ul>
         </div>
-      </div>
-    </div>
-  );
+      </div> */
+  }
 };
 
 export default Resume;

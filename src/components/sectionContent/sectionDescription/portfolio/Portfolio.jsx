@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
+import { portfolioData } from "../../../../utils/data";
 import "./portfolio.css";
+
+const allTabs = new Set(portfolioData.map((item) => item.category));
 
 const Portfolio = () => {
   const [tab, setTab] = useState(0);
@@ -8,68 +11,40 @@ const Portfolio = () => {
   return (
     <div className="section__right_content_description_portfolio">
       <div className="section__right_content_description_portfolio_header">
-        <a
-          style={{ color: tab === 0 ? "rgb(250, 191, 48)" : "#000" }}
-          className="section__right_content_description_portfolio_header_tag"
-          onClick={() => setTab(0)}
-        >
-          REACT
-        </a>
-        <a
-          style={{ color: tab === 1 ? "rgb(250, 191, 48)" : "#000" }}
-          className="section__right_content_description_portfolio_header_tag"
-          onClick={() => setTab(1)}
-        >
-          JAVASCRIPT
-        </a>
-        <a
-          style={{ color: tab === 2 ? "rgb(250, 191, 48)" : "#000" }}
-          className="section__right_content_description_portfolio_header_tag"
-          onClick={() => setTab(2)}
-        >
-          HTML + CSS
-        </a>
+        {Array.from(allTabs).map((item, index) => (
+          <a
+            style={{ color: tab === index ? "rgb(250, 191, 48)" : "#000" }}
+            className="section__right_content_description_portfolio_header_tag"
+            onClick={() => setTab(index)}
+          >
+            {item}
+          </a>
+        ))}
       </div>
       <div className="section__right_content_description_portfolio_details">
-        <div className="section__right_content_description_portfolio_details_box">
-          <img
-            className="section__right_content_description_portfolio_details_box_photo"
-            src="/src/assets/html_css_1.png"
-            alt="project-image"
-          />
-          <div class="section__right_content_description_portfolio_details_box_overlay"></div>
-          <div className="section__right_content_description_portfolio_details_box_description">
-            <h3>Hair Styling</h3>
-            <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <div className="section__right_content_description_portfolio_details_box">
-          <img
-            className="section__right_content_description_portfolio_details_box_photo"
-            src="/src/assets/html_css_1.png"
-            alt="project-image"
-          />
-          <div class="section__right_content_description_portfolio_details_box_overlay"></div>
-          <div className="section__right_content_description_portfolio_details_box_description">
-            <h3>Hair Styling</h3>
-            <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <div className="section__right_content_description_portfolio_details_box">
-          <img
-            className="section__right_content_description_portfolio_details_box_photo"
-            src="/src/assets/html_css_1.png"
-            alt="project-image"
-          />
-          <div class="section__right_content_description_portfolio_details_box_overlay"></div>
-          <div className="section__right_content_description_portfolio_details_box_description">
-            <h3>Hair Styling</h3>
-            <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
+        {portfolioData.map(
+          (item) =>
+            Array.from(allTabs)[tab] === item.category && (
+              <a
+                href={item.url}
+                target="_blank"
+                key={item.id}
+                className="section__right_content_description_portfolio_details_box"
+              >
+                <img
+                  className="section__right_content_description_portfolio_details_box_photo"
+                  src={item.img}
+                  alt={item.title}
+                />
+                <div class="section__right_content_description_portfolio_details_box_overlay"></div>
+                <div className="section__right_content_description_portfolio_details_box_description">
+                  <h3>{item.title}</h3>
+                  <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
+                  <p>{item.description}</p>
+                </div>
+              </a>
+            )
+        )}
       </div>
     </div>
   );
