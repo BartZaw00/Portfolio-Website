@@ -17,9 +17,9 @@ const Contact = () => {
       </p>
       <div className="section__right_content_description_contact_details">
         <div className="section__right_content_description_contact_details_icons">
-          <BsTelephone size={100} color="rgb(250, 191, 48)" />
-          <AiOutlineLinkedin size={130} color="rgb(250, 191, 48)" />
-          <IoMailOpenOutline size={125} color="rgb(250, 191, 48)" />
+          <BsTelephone color="rgb(250, 191, 48)" />
+          <AiOutlineLinkedin color="rgb(250, 191, 48)" />
+          <IoMailOpenOutline color="rgb(250, 191, 48)" />
         </div>
         <div className="section__right_content_description_contact_details_detail">
           <span>727-612-510</span>

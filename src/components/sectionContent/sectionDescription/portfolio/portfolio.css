@@ -75,14 +75,14 @@
 
 .section__right_content_description_portfolio_details_box:hover
   .section__right_content_description_portfolio_details_box_description {
-  bottom: 25%;
+  bottom: 20%;
   opacity: 1;
 }
 
 .section__right_content_description_portfolio_details_box_github {
-  background-color: rgba(0,0,0,0.3);
-  width: 30px;
-  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 5%;
   right: 5%;
@@ -92,3 +92,61 @@
   align-items: center;
 }
 
+.section__right_content_description_portfolio_details_box_github:hover {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1500px) {
+  .section__right_content_description_portfolio_details_box_description {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .section__right_content_description_portfolio_details_box {
+    flex-basis: 45%;
+  }
+  .section__right_content_description_portfolio_details_box:hover
+    .section__right_content_description_portfolio_details_box_description {
+    bottom: 45%;
+  }
+  .section__right_content_description_portfolio_details_box_description > * {
+    display: none;
+  }
+  .section__right_content_description_portfolio_details_box_description > h3 {
+    display: block;
+  }
+  .section__right_content_description_portfolio_details_box_description_divider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .section__right_content_description_portfolio_header {
+    gap: 100px;
+  }
+  .section__right_content_description_portfolio_header_tag {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section__right_content_description_portfolio_header {
+    gap: 50px;
+  }
+  .section__right_content_description_portfolio_header_tag {
+    font-size: 20px;
+  }
+  .section__right_content_description_portfolio_details {
+    padding: 50px 0 0 0;
+  }
+  .section__right_content_description_portfolio_details_box {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__right_content_description_portfolio_header_tag {
+    font-size: 15px;
+  }
+}

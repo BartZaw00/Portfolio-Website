@@ -27,23 +27,23 @@ const Portfolio = () => {
         {portfolioData.map(
           (item) =>
             Array.from(allTabs)[tab] === item.category && (
-              <a
-                href={item.url}
-                target="_blank"
+              <div
                 key={item.id}
                 className="section__right_content_description_portfolio_details_box"
               >
-                <img
-                  className="section__right_content_description_portfolio_details_box_photo"
-                  src={item.img}
-                  alt={item.title}
-                />
-                <div className="section__right_content_description_portfolio_details_box_overlay"></div>
-                <div className="section__right_content_description_portfolio_details_box_description">
-                  <h3>{item.title}</h3>
-                  <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
-                  <p>{item.description}</p>
-                </div>
+                <a href={item.url} target="_blank">
+                  <img
+                    className="section__right_content_description_portfolio_details_box_photo"
+                    src={item.img}
+                    alt={item.title}
+                  />
+                  <div className="section__right_content_description_portfolio_details_box_overlay"></div>
+                  <div className="section__right_content_description_portfolio_details_box_description">
+                    <h3>{item.title}</h3>
+                    <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
+                    <p>{item.description}</p>
+                  </div>
+                </a>
                 <a
                   href={item.github_url}
                   target="_blank"
@@ -51,7 +51,7 @@ const Portfolio = () => {
                 >
                   <VscGithub />
                 </a>
-              </a>
+              </div>
             )
         )}
       </div>

@@ -13,19 +13,19 @@
   letter-spacing: 15px;
 }
 
-@media screen and (max-width: 1300px), screen and (max-height: 650px) {
+@media screen and (max-width: 1300px) {
   .section__right_content_heading_header {
-    font-size: 80px;
+    font-size: 75px;
   }
 }
 
-@media screen and (max-width: 900px), screen and (max-height: 500px) {
+@media screen and (max-width: 950px) {
   .section__right_content_heading_header {
     font-size: 60px;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .section__right_content_heading_header {
     font-size: 40px;
   }

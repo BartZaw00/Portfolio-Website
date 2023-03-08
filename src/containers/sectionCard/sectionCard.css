@@ -2,3 +2,10 @@
   min-height: 100vh;
   display: flex;
 }
+
+@media (max-width: 450px) {
+  .section{
+    flex-direction: column;
+    background-color: rgb(250, 191, 48);
+  }
+}

@@ -10,6 +10,17 @@
   max-width: 65%;
 }
 
+.main__left_header_photo-mobile {
+  display: none;
+  width: 75%;
+}
+
+.main__left_photo {
+  display: none;
+  width: 45%;
+  min-width: 450px;
+}
+
 .main__left_header_subheading,
 .main__left_header_heading {
   font-family: "Viga", sans-serif;
@@ -58,4 +69,70 @@
 
 .main__left_header_btn:hover {
   transform: translateY(-5px);
+}
+
+@media (max-width: 1300px) {
+  .main__left {
+    flex-direction: row;
+    gap: 50px;
+    padding: 100px;
+  }
+
+  .main__left_photo {
+    display: block;
+  }
+}
+
+@media (max-width: 1120px) {
+  .main__left_header_subheading {
+    font-size: 28px;
+  }
+
+  .main__left_header_heading {
+    font-size: 43px;
+    margin-bottom: 10px;
+  }
+  .main__left_header_paragraph {
+    font-size: 15px;
+  }
+  .main__left_photo {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main__left_header_subheading {
+    font-size: 22px;
+  }
+
+  .main__left_header_heading {
+    font-size: 30px;
+  }
+  .main__left_header_paragraph {
+    font-size: 15px;
+  }
+  .main__left_photo {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 770px) {
+  .main__left {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    gap: 0;
+  }
+  .main__left_header_photo-mobile {
+    display: block;
+  }
+  .main__left_header {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__left_photo {
+    display: none;
+  }
 }

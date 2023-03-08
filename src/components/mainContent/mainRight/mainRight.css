@@ -3,3 +3,9 @@
   background: url("/src/assets/cv-main-card.png");
   background-size: cover;
 }
+
+@media (max-width: 1300px) {
+  .main__right {
+    display: none;
+  }
+}
