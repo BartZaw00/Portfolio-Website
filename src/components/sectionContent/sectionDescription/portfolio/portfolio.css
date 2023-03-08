@@ -78,3 +78,17 @@
   bottom: 25%;
   opacity: 1;
 }
+
+.section__right_content_description_portfolio_details_box_github {
+  background-color: rgba(0,0,0,0.3);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { VscGithub } from "react-icons/vsc";
 
 import { portfolioData } from "../../../../utils/data";
 import "./portfolio.css";
@@ -43,6 +44,13 @@ const Portfolio = () => {
                   <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
                   <p>{item.description}</p>
                 </div>
+                <a
+                  href={item.github_url}
+                  target="_blank"
+                  className="section__right_content_description_portfolio_details_box_github"
+                >
+                  <VscGithub />
+                </a>
               </a>
             )
         )}

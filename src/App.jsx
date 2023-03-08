@@ -26,8 +26,12 @@ function App() {
 
   const handleWheel = useCallback(
     (event) => {
-      if (event.deltaY > 0 && page < 4) setPage(page + 1); // mouse scroll down
-      if (event.deltaY < 0 && page > 0) setPage(page - 1); // mouse scroll up
+      const screenHeight = window.innerHeight;
+      const screenWidth = window.innerWidth;
+      if (screenHeight >= 780 && screenWidth <= 2200) {
+        if (event.deltaY > 0 && page < 4) setPage(page + 1); // mouse scroll down
+        if (event.deltaY < 0 && page > 0) setPage(page - 1); // mouse scroll up
+      }
     },
     [page]
   );

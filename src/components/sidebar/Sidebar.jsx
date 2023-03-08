@@ -16,7 +16,7 @@ const Sidebar = () => {
     <div className="section__left">
       <img src={cvSectionCard} alt="profile-photo" />
       <div className="section__left_menu">
-        <MdCircle />
+        <MdCircle className="section__left_menu_icon"/>
         {categories.map((category) => {
           return (
             <a
@@ -29,7 +29,7 @@ const Sidebar = () => {
             </a>
           );
         })}
-        <MdCircle />
+        <MdCircle className="section__left_menu_icon"/>
       </div>
     </div>
   );

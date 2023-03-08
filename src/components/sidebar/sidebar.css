@@ -1,6 +1,7 @@
 .section__left {
-  min-height: 100vh;
-  max-width: 20vw;
+  min-width: 160px;
+  width: 20vw;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,4 +25,33 @@
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1300px), screen and (max-height: 850px) {
+  .section__left_menu {
+    justify-content: space-around;
+    gap: 0;
+  }
+  .section__left_menu_tag {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 700px) {
+  .section__left_menu_tag {
+    font-size: 17px;
+  }
+  .section__left_menu_icon {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-height: 500px) {
+  .section__left_menu_tag {
+    font-size: 15px;
+  }
+  .section__left_menu_icon {
+    font-size: 10px;
+  }
 }

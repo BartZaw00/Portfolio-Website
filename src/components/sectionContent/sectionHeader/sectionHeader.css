@@ -12,3 +12,33 @@
   color: #111;
   letter-spacing: 15px;
 }
+
+@media screen and (max-width: 1300px), screen and (max-height: 650px) {
+  .section__right_content_heading_header {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 900px), screen and (max-height: 500px) {
+  .section__right_content_heading_header {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section__right_content_heading_header {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__right_content_heading_header {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__right_content_heading_header {
+    font-size: 20px;
+  }
+}

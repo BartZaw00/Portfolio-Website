@@ -11,3 +11,9 @@
   border-radius: 30px;
   background-color: rgb(250, 191, 48);
 }
+
+@media screen and (max-width: 1300px) {
+  .navigation-bar{
+    display: none;
+  }
+}

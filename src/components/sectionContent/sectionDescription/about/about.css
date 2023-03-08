@@ -1,13 +1,30 @@
 .section__right_content_description_about_subheading {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+.section__right_content_description_about_subheading_name-style {
+  font-family: "Viga", sans-serif;
+  font-weight: 900;
+}
+
+.section__right_content_description_about_paragraph {
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 1300px), screen and (max-height: 650px) {
+  .section__right_content_description_about_subheading {
+    font-size: 30px;
   }
-  
-  .section__right_content_description_about_subheading_name-style {
-    font-family: "Viga", sans-serif;
-    font-weight: 900;
-  }
-  
   .section__right_content_description_about_paragraph {
-    margin-top: 25px;
+    font-size: 15px;
   }
-  
+}
+
+@media screen and (max-width: 900px), screen and (max-height: 500px) {
+  .section__right_content_description_about_subheading {
+    font-size: 25px;
+  }
+  .section__right_content_description_about_paragraph {
+    font-size: 13px;
+  }
+}
