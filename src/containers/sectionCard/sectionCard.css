@@ -3,8 +3,52 @@
   display: flex;
 }
 
+/* .slide-up-enter {
+  transform: translateY(100%);
+  display: flex;
+}
+
+.slide-up-enter-active {
+  transform: translateY(0%);
+  transition: transform 500ms ease-in;
+  display: flex;
+}
+
+.slide-up-exit {
+  transform: translateY(0%);
+  display: flex;
+}
+
+.slide-up-exit-active {
+  transform: translateY(-100%);
+  transition: transform 300ms ease-out;
+  display: flex;
+}
+
+.slide-down-enter {
+  transform: translateY(-100%);
+  display: flex;
+}
+
+.slide-down-enter-active {
+  transform: translateY(0%);
+  transition: transform 500ms ease-in;
+  display: flex;
+}
+
+.slide-down-exit {
+  transform: translateY(0%);
+  display: flex;
+}
+
+.slide-down-exit-active {
+  transform: translateY(100%);
+  transition: transform 300ms ease-out;
+  display: flex;
+} */
+
 @media (max-width: 450px) {
-  .section{
+  .section {
     flex-direction: column;
     background-color: rgb(250, 191, 48);
   }

@@ -13,3 +13,19 @@
   flex-direction: column;
   gap: 40px;
 }
+
+.section__right_content--animate-in {
+  animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
