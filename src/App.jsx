@@ -9,7 +9,7 @@ export const PageContext = createContext();
 
 function App() {
   const [page, setPage] = useState(0);
-  
+
   const handleKeyPress = useCallback(
     (event) => {
       if (event.keyCode === 40 || event.keyCode === 39) {
@@ -28,7 +28,7 @@ function App() {
     (event) => {
       const screenHeight = window.innerHeight;
       const screenWidth = window.innerWidth;
-      if (screenHeight >= 780 && screenWidth <= 2200) {
+      if (screenHeight >= 780 && screenWidth <= 2200 && screenWidth >= 768) {
         if (event.deltaY > 0 && page < 4) setPage(page + 1); // mouse scroll down
         if (event.deltaY < 0 && page > 0) setPage(page - 1); // mouse scroll up
       }

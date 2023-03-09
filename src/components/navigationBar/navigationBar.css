@@ -13,7 +13,19 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .navigation-bar{
+  .navigation-bar {
     display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .navigation-bar {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .navigation-bar {
+    gap: 10px;
   }
 }

@@ -100,10 +100,13 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .section__right_content_description_resume {
-    margin-top: 20px;
+    margin-top: 10px;
     flex-direction: column;
     gap: 50px;
   }
+  .section__right_content_description_resume_details {
+    margin-left: 20px;
+     }
 }
