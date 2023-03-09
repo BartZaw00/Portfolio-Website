@@ -1,15 +1,15 @@
 .section__right_content_heading {
-  border: 3px dotted #ccc;
+  border: 3px dotted var(--color-divider);
 }
 
 .section__right_content_heading_header {
   padding: 20px 0;
   text-align: center;
-  border: 3px dotted #ccc;
+  border: 3px dotted var(--color-divider);
   font-size: 100px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  color: #111;
+  color: var(--color-heading);
   letter-spacing: 15px;
 }
 

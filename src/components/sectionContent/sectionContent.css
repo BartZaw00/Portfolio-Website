@@ -1,14 +1,12 @@
 .section__right {
   margin-left: 20%;
   min-width: 80%;
-  background-color: #eee;
+  background-color: var(--color-background);
   flex: 1;
   display: flex;
   justify-content: center;
-
   overflow-x: hidden;
 }
-
 
 .section__right_content {
   max-width: 85%;
@@ -42,7 +40,7 @@
 }
 
 .slide-right-enter {
-  transform: translateX(200%);
+  transform: translateX(50%);
 }
 
 .slide-right-enter-active {
@@ -55,12 +53,12 @@
 }
 
 .slide-right-exit-active {
-  transform: translateX(-200%);
+  transform: translateX(-50%);
   transition: transform 500ms ease-out;
 }
 
 .slide-left-enter {
-  transform: translateX(-200%);
+  transform: translateX(-50%);
 }
 
 .slide-left-enter-active {
@@ -73,6 +71,6 @@
 }
 
 .slide-left-exit-active {
-  transform: translateX(200%);
+  transform: translateX(50%);
   transition: transform 500ms ease-out;
 }

@@ -21,8 +21,8 @@
 
 .section__right_content_description_resume_details_detail_time {
   padding: 5px 10px;
-  background-color: rgb(250, 191, 48);
-  color: #fff;
+  background-color: var(--color-main);
+  color: var(--color-btn-text);
   border-radius: 10px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .section__right_content_description_resume_divider {
-  border-left: 3px dotted #ccc;
+  border-left: 3px dotted var(--color-divider);
 }
 
 @media screen and (max-width: 1700px), screen and (max-height: 650px) {

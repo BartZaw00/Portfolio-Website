@@ -32,11 +32,7 @@ const MainLeft = () => {
           MORE ABOUT ME
         </button>
       </div>
-      <img
-          className="main__left_photo"
-          src={cvMainCard}
-          alt="profile-photo"
-        />
+      <img className="main__left_photo" src={cvMainCard} alt="profile-photo" />
     </div>
   );
 };

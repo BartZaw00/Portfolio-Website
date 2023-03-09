@@ -5,7 +5,7 @@
 }
 
 .section__right_content_description_portfolio_header_tag {
-  color: #111;
+  color: var(--color-heading);
   font-family: "Viga", sans-serif;
   font-weight: 900;
   font-size: 30px;
@@ -18,17 +18,31 @@
   flex-wrap: wrap;
   padding: 50px;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 .section__right_content_description_portfolio_details_box {
   flex-basis: 35%;
   position: relative;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .section__right_content_description_portfolio_details_box:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1) translateY(-5px);
 }
 
 .section__right_content_description_portfolio_details_box_photo {
@@ -43,7 +57,7 @@
   position: absolute;
   top: 0;
   border-radius: 10px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(250, 191, 48));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), var(--color-main));
   opacity: 0;
   transition: 1s;
 }
@@ -93,7 +107,7 @@
 }
 
 .section__right_content_description_portfolio_details_box_github:hover {
-  background-color: #fff;
+  background-color: var(--color-btn-hover);
 }
 
 @media screen and (max-width: 1500px) {

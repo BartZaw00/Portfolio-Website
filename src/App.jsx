@@ -12,13 +12,26 @@ function App() {
 
   const handleKeyPress = useCallback(
     (event) => {
-      if (event.keyCode === 40 || event.keyCode === 39) {
-        if (page === 4) return;
-        setPage(page + 1); // down or left arrow key
+      const screenHeight = window.innerHeight;
+      if (screenHeight >= 780) {
+        if (event.keyCode === 40) {
+          if (page === 4) return;
+          setPage(page + 1); // down arrow key
+        }
+
+        if (event.keyCode === 38) {
+          if (page === 0) return;
+          setPage(page - 1); // up arrow key
+        }
       }
-      if (event.keyCode === 38 || event.keyCode === 37) {
+
+      if (event.keyCode === 39) {
+        if (page === 4) return;
+        setPage(page + 1); // left arrow key
+      }
+      if (event.keyCode === 37) {
         if (page === 0) return;
-        setPage(page - 1); // up or right arrow key
+        setPage(page - 1); // right arrow key
       }
     },
     [page]
