@@ -68,6 +68,11 @@ export const portfolioData = [
   {
     id: 1,
     category: "REACT",
+    img: react_1,
+    title: "Portfolio Website",
+    description: "A portfolio website containing my current projects",
+    url: "https://bzawadka-portfolio.netlify.app",
+    github_url: "https://github.com/BartZaw00/Portfolio-Website"
   },
   {
     id: 2,
