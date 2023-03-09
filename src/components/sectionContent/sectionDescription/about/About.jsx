@@ -1,10 +1,13 @@
 import React from "react";
+import { FaFileDownload } from "react-icons/fa";
+
+import myCV from "../../../../assets/bzawadka-CV.pdf";
 
 import "./about.css";
 
 const About = () => {
   return (
-    <> 
+    <>
       <span className="section__right_content_description_about_subheading">
         I'm{" "}
         <span className="section__right_content_description_about_subheading_name-style">
@@ -20,6 +23,10 @@ const About = () => {
         time, I enjoy playing and watching football, going to the gym and
         playing chess.
       </p>
+      <a className="download-cv-button" href={myCV} download>
+        <FaFileDownload className="download-cv-icon" />
+        Download my CV
+      </a>
     </>
   );
 };
