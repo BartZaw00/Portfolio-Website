@@ -20,7 +20,7 @@ const SectionContent = () => {
   const prevPage = usePrevious(page);
 
   const animationClass =
-    prevPage !== null && page > prevPage ? "slide-down" : "slide-up";
+     page > prevPage ? "slide-right" : "slide-left";
 
   const sectionHeaders = ["", "About us", "Resume", "Portfolio", "Contact"];
 
@@ -32,10 +32,10 @@ const SectionContent = () => {
           <CSSTransition
             key={sectionHeaders[page]}
             classNames={{
-              enter: `slide-up-enter ${animationClass}-enter`,
-              enterActive: `slide-up-enter-active ${animationClass}-enter-active`,
-              exit: `slide-up-exit ${animationClass}-exit`,
-              exitActive: `slide-up-exit-active ${animationClass}-exit-active`,
+              enter: `slide-right-enter ${animationClass}-enter`,
+              enterActive: `slide-right-enter-active ${animationClass}-enter-active`,
+              exit: `slide-right-exit ${animationClass}-exit`,
+              exitActive: `slide-right-exit-active ${animationClass}-exit-active`,
             }}
             timeout={{ enter: 500 }}
           >
