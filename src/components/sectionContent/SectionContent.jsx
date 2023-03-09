@@ -27,20 +27,7 @@ const SectionContent = () => {
   return (
     <div className="section__right">
       <div className="section__right_content">
-        <TransitionGroup>
-          <CSSTransition
-            key={sectionHeaders[page]}
-            classNames={{
-              enter: `slide-up-enter ${animationClass}-enter`,
-              enterActive: `slide-up-enter-active ${animationClass}-enter-active`,
-              exit: `slide-up-exit ${animationClass}-exit`,
-              exitActive: `slide-up-exit-active ${animationClass}-exit-active`,
-            }}
-            timeout={{ enter: 500 }}
-          >
-            <SectionHeader />
-          </CSSTransition>
-        </TransitionGroup>
+        <SectionHeader />
         <TransitionGroup>
           <CSSTransition
             key={sectionHeaders[page]}
