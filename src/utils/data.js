@@ -59,6 +59,8 @@ export const resumeData = [
 ];
 
 import html_css_1 from "../assets/html_css_1.png";
+import html_css_2 from "../assets/html_css_2.png";
+import html_css_3 from "../assets/html_css_3.png";
 import js_1 from "../assets/js_1.png";
 import js_2 from "../assets/js_2.png";
 import js_3 from "../assets/js_3.png";
@@ -72,7 +74,7 @@ export const portfolioData = [
     title: "Portfolio Website",
     description: "A portfolio website containing my current projects",
     url: "https://bzawadka-portfolio.netlify.app",
-    github_url: "https://github.com/BartZaw00/Portfolio-Website"
+    github_url: "https://github.com/BartZaw00/Portfolio-Website",
   },
   {
     id: 2,
@@ -110,5 +112,23 @@ export const portfolioData = [
     description: "A calculator that allows to do several math operations",
     url: "https://calculator-app-bartzaw00.netlify.app",
     github_url: "https://github.com/BartZaw00/JS-Projects/tree/main/calculator",
+  },
+  {
+    id: 6,
+    category: "HTML + CSS",
+    img: html_css_2,
+    title: "Three Benefits Section",
+    description: "A section of a page with 3 boxes containing benefits",
+    url: "https://three-benefits-section.netlify.app",
+    github_url: "https://github.com/BartZaw00/Three-Benefits-Section",
+  },
+  {
+    id: 7,
+    category: "HTML + CSS",
+    img: html_css_3,
+    title: "Order Summary Section",
+    description: "A section of an order summary page",
+    url: "https://order-summary-section.netlify.app",
+    github_url: "https://github.com/BartZaw00/Order-Summary",
   },
 ];
