@@ -3,6 +3,8 @@ import { FaFileDownload } from "react-icons/fa";
 
 import myCV from "../../../../assets/bzawadka-CV.pdf";
 
+import { skillsData } from "../../../../utils/data";
+
 import "./about.css";
 
 const About = () => {
@@ -26,7 +28,26 @@ const About = () => {
       <a className="download-cv-button" href={myCV} download>
         <FaFileDownload className="download-cv-icon" />
         Download my CV
-      </a>
+      </a>{" "}
+      <div className="skills-section">
+        {skillsData.map((skill) => (
+          <div className="skills">
+            <div className="skills-title">{skill.category}</div>
+            <div className="skills-box">
+              {skill.details.map((item) => {
+                return (
+                  <div key={item.id} className="skill-box">
+                    <div className="skill">
+                      <img src={item.img} alt="skill" />
+                    </div>
+                    <span>{item.skill}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

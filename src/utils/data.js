@@ -1,9 +1,56 @@
+import html_css_1 from "../assets/html_css_1.png";
+import html_css_2 from "../assets/html_css_2.png";
+import html_css_3 from "../assets/html_css_3.png";
+import js_1 from "../assets/js_1.png";
+import js_2 from "../assets/js_2.png";
+import js_3 from "../assets/js_3.png";
+import react_1 from "../assets/react_1.png";
+import html_logo from "../assets/html_logo.svg";
+import css_logo from "../assets/css_logo.svg";
+import js_logo from "../assets/js_logo.svg";
+import scss_logo from "../assets/scss_logo.svg";
+import react_logo from "../assets/react_logo.svg";
+import tailwind_logo from "../assets/tailwind_logo.svg";
+import figma_logo from "../assets/figma_logo.svg";
+import git_logo from "../assets/git_logo.svg";
+import english_logo from "../assets/english_logo.svg";
+import sql_logo from "../assets/sql_logo.svg";
+import wordpress_logo from "../assets/wordpress_logo.svg"
+import cplusplus_logo from "../assets/cplusplus_logo.svg"
+
 export const categories = [
   { id: 0, name: "HOME", icon: "" },
   { id: 1, name: "ABOUT ME", icon: "" },
   { id: 2, name: "RESUME", icon: "" },
   { id: 3, name: "PORTFOLIO", icon: "" },
   { id: 4, name: "CONTACT", icon: "" },
+];
+
+export const skillsData = [
+  {
+    id: 1,
+    category: "Skills",
+    details: [
+      { id: 1, skill: "HTML", img: html_logo },
+      { id: 2, skill: "CSS", img: css_logo },
+      { id: 3, skill: "SCSS", img: scss_logo },
+      { id: 4, skill: "JavaScript", img: js_logo },
+      { id: 5, skill: "React ", img: react_logo },
+      { id: 6, skill: "Tailwind ", img: tailwind_logo },
+      { id: 7, skill: "Figma", img: figma_logo },
+      { id: 8, skill: "GIT", img: git_logo },
+    ],
+  },
+  {
+    id: 2,
+    category: "Other Skills",
+    details: [
+      { id: 1, skill: "English (B2/C1)", img: english_logo },
+      { id: 2, skill: "SQL", img: sql_logo },
+      { id: 3, skill: "WordPress", img: wordpress_logo },
+      { id: 4, skill: "C++", img: cplusplus_logo },
+    ],
+  },
 ];
 
 export const resumeData = [
@@ -57,14 +104,6 @@ export const resumeData = [
     ],
   },
 ];
-
-import html_css_1 from "../assets/html_css_1.png";
-import html_css_2 from "../assets/html_css_2.png";
-import html_css_3 from "../assets/html_css_3.png";
-import js_1 from "../assets/js_1.png";
-import js_2 from "../assets/js_2.png";
-import js_3 from "../assets/js_3.png";
-import react_1 from "../assets/react_1.png";
 
 export const portfolioData = [
   {

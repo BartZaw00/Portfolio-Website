@@ -87,12 +87,12 @@
 }
 
 .section__right_content_description_portfolio_details_box_description_technologies_technology {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 13px;
-  color:white;
+  color: white;
   padding: 8px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .section__right_content_description_portfolio_details_box_github {
@@ -106,11 +106,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .section__right_content_description_portfolio_details_box_github:hover {
   background-color: var(--color-btn-hover);
+  transform: scale(1.2) ;
 }
+
 
 @media screen and (max-width: 1500px) {
   .section__right_content_description_portfolio_details_box_description {
