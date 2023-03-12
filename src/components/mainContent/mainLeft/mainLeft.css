@@ -81,10 +81,6 @@
   }
 }
 
-.main__left_header_btn:hover {
-  transform: scale(1.1) translateY(-5px);
-}
-
 @media (max-width: 1300px) {
   .main__left {
     flex-direction: row;

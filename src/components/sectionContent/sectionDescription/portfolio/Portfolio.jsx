@@ -41,7 +41,25 @@ const Portfolio = () => {
                   <div className="section__right_content_description_portfolio_details_box_description">
                     <h3>{item.title}</h3>
                     <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
-                    <p>{item.description}</p>
+                    <div className="section__right_content_description_portfolio_details_box_description_technologies">
+                      {item.technologies.map((technology, index) => {
+                        let colorText;
+                        if (technology === "REACT") colorText = "#61DBFB";
+                        if (technology === "JAVASCRIPT") colorText = "#EBA834";
+                        if (technology === "HTML") colorText = "#E34C26";
+                        if (technology === "CSS") colorText = "#264DE4";
+                        if (technology === "SCSS") colorText = "#CC6699";
+                        return (
+                          <span
+                            key={index}
+                            className="section__right_content_description_portfolio_details_box_description_technologies_technology"
+                            style={{ backgroundColor: colorText }}
+                          >
+                            {technology}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </div>
                 </a>
                 <a

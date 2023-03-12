@@ -26,19 +26,6 @@
   justify-content: center;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  animation: bounce 2s infinite ease-in-out;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .download-cv-button:hover {

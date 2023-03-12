@@ -25,19 +25,6 @@
   position: relative;
   cursor: pointer;
   transition: 0.5s ease-in-out;
-  animation: bounce 2s infinite ease-in-out;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .section__right_content_description_portfolio_details_box:hover {
@@ -88,8 +75,24 @@
 
 .section__right_content_description_portfolio_details_box:hover
   .section__right_content_description_portfolio_details_box_description {
-  bottom: 20%;
+  bottom: 25%;
   opacity: 1;
+}
+
+.section__right_content_description_portfolio_details_box_description_technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.section__right_content_description_portfolio_details_box_description_technologies_technology {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  color:white;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .section__right_content_description_portfolio_details_box_github {
