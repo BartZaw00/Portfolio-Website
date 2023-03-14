@@ -1,6 +1,7 @@
 import html_css_1 from "../assets/html_css_1.png";
 import html_css_2 from "../assets/html_css_2.png";
 import html_css_3 from "../assets/html_css_3.png";
+import html_css_4 from "../assets/html_css_4.png";
 import js_1 from "../assets/js_1.png";
 import js_2 from "../assets/js_2.png";
 import js_3 from "../assets/js_3.png";
@@ -15,8 +16,8 @@ import figma_logo from "../assets/figma_logo.svg";
 import git_logo from "../assets/git_logo.svg";
 import english_logo from "../assets/english_logo.svg";
 import sql_logo from "../assets/sql_logo.svg";
-import wordpress_logo from "../assets/wordpress_logo.svg"
-import cplusplus_logo from "../assets/cplusplus_logo.svg"
+import wordpress_logo from "../assets/wordpress_logo.svg";
+import cplusplus_logo from "../assets/cplusplus_logo.svg";
 
 export const categories = [
   { id: 0, name: "HOME", icon: "" },
@@ -176,5 +177,15 @@ export const portfolioData = [
     technologies: ["HTML", "SCSS"],
     url: "https://order-summary-section.netlify.app",
     github_url: "https://github.com/BartZaw00/Order-Summary",
+  },
+  {
+    id: 8,
+    category: "HTML + CSS",
+    img: html_css_4,
+    title: "Nike Order Summary Section",
+    description: "A section of a Nike order summary page",
+    technologies: ["HTML", "SCSS"],
+    url: "https://order-summary-nike.netlify.app",
+    github_url: "https://github.com/BartZaw00/Nike-Order-Summary",
   },
 ];
