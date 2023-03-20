@@ -5,6 +5,7 @@ import html_css_4 from "../assets/html_css_4.png";
 import js_1 from "../assets/js_1.png";
 import js_2 from "../assets/js_2.png";
 import js_3 from "../assets/js_3.png";
+import js_4 from "../assets/js_4.png";
 import react_1 from "../assets/react_1.png";
 import react_2 from "../assets/react_2.png";
 import html_logo from "../assets/html_logo.svg";
@@ -135,7 +136,7 @@ export const portfolioData = [
     title: "Covid in USA",
     description:
       "Data visualization about COVID-19 cases and deaths in USA depending on chosen date.",
-    technologies: ["JAVASCRIPT", "HTML", "CSS"],
+    technologies: ["JAVASCRIPT", "HTML", "CSS", "REST API"],
     url: "https://covid19-in-usa.netlify.app",
     github_url: "https://github.com/BartZaw00/Covid-In-Usa",
   },
@@ -152,6 +153,16 @@ export const portfolioData = [
   {
     id: 5,
     category: "JAVASCRIPT",
+    img: js_4,
+    title: "Movies App",
+    description: "A movie app that enables to search for movies",
+    technologies: ["JAVASCRIPT", "HTML", "CSS", "REST API"],
+    url: "https://searching-movies-app.netlify.app",
+    github_url: "https://github.com/BartZaw00/JS-Projects/tree/main/movie-app",
+  },
+  {
+    id: 6,
+    category: "JAVASCRIPT",
     img: js_2,
     title: "Quiz App",
     description: "A quiz containing 10 questions about football knowledge",
@@ -160,7 +171,7 @@ export const portfolioData = [
     github_url: "https://github.com/BartZaw00/JS-Projects/tree/main/quiz-app",
   },
   {
-    id: 6,
+    id: 7,
     category: "JAVASCRIPT",
     img: js_3,
     title: "Calculator App",
@@ -170,7 +181,7 @@ export const portfolioData = [
     github_url: "https://github.com/BartZaw00/JS-Projects/tree/main/calculator",
   },
   {
-    id: 7,
+    id: 8,
     category: "HTML + CSS",
     img: html_css_2,
     title: "Three Benefits Section",
@@ -180,7 +191,7 @@ export const portfolioData = [
     github_url: "https://github.com/BartZaw00/Three-Benefits-Section",
   },
   {
-    id: 8,
+    id: 9,
     category: "HTML + CSS",
     img: html_css_3,
     title: "Order Summary Section",
@@ -190,7 +201,7 @@ export const portfolioData = [
     github_url: "https://github.com/BartZaw00/Order-Summary",
   },
   {
-    id: 9,
+    id: 10,
     category: "HTML + CSS",
     img: html_css_4,
     title: "Nike Order Summary Section",

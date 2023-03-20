@@ -60,6 +60,9 @@ const Portfolio = () => {
                           case "SCSS":
                             colorBg = "#CC6699";
                             break;
+                          case "REST API":
+                            colorBg = "#222222";
+                            break;
                           case "TAILWIND":
                             colorBg = "#38BDF8";
                             break;
