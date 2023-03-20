@@ -1,10 +1,10 @@
-.section__right_content_description_resume {
+.c-resume {
   margin-top: 60px;
   display: flex;
   justify-content: space-around;
 }
 
-.section__right_content_description_resume_subheading {
+.c-resume__heading {
   color: #111;
   font-family: "Viga", sans-serif;
   font-weight: 900;
@@ -12,101 +12,101 @@
   margin-bottom: 10px;
 }
 
-.section__right_content_description_resume_details_detail {
+.c-resume__detail {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   gap: 10px;
 }
 
-.section__right_content_description_resume_details_detail_time {
+.c-resume__time {
   padding: 5px 10px;
   background-color: var(--color-main);
   color: var(--color-btn-text);
   border-radius: 10px;
 }
 
-.section__right_content_description_resume_details_detail_title {
+.c-resume__title {
   font-size: 20px;
   font-weight: bold;
 }
 
-.section__right_content_description_resume_details_detail_title--weightLow {
+.c-resume__title--weightLow {
   font-weight: 500;
 }
 
-.section__right_content_description_resume_details_detail_list {
+.c-resume__list {
   margin-bottom: 20px;
 }
 
-.section__right_content_description_resume_divider {
+.c-resume__divider {
   border-left: 3px dotted var(--color-divider);
 }
 
 @media screen and (max-width: 1700px), screen and (max-height: 650px) {
-  .section__right_content_description_resume_subheading {
+  .c-resume__heading {
     font-size: 30px;
   }
-  .section__right_content_description_resume_details_detail_time {
+  .c-resume__time {
     font-size: 15px;
   }
-  .section__right_content_description_resume_details_detail_title {
+  .c-resume__title {
     font-size: 15px;
   }
-  .section__right_content_description_resume_details_detail_list {
+  .c-resume__list {
     font-size: 13px;
     padding-left: 10px;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .section__right_content_description_resume_subheading {
+  .c-resume__heading {
     font-size: 30px;
   }
-  .section__right_content_description_resume_details_detail_time {
+  .c-resume__time {
     font-size: 13px;
   }
-  .section__right_content_description_resume_details_detail_title {
+  .c-resume__title {
     font-size: 13px;
   }
-  .section__right_content_description_resume_details_detail_list {
+  .c-resume__list {
     font-size: 11px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .section__right_content_description_resume_subheading {
+  .c-resume__heading {
     font-size: 25px;
   }
-  .section__right_content_description_resume_details_detail_time {
+  .c-resume__time {
     font-size: 12px;
   }
-  .section__right_content_description_resume_details_detail_title {
+  .c-resume__title {
     font-size: 12px;
   }
-  .section__right_content_description_resume_details_detail_list {
+  .c-resume__list {
     font-size: 10px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  .section__right_content_description_resume_divider {
-    display: none;
-  }
-  .section__right_content_description_resume {
+  .c-resume {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 35px;
   }
+  .c-resume__divider {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .section__right_content_description_resume {
+  .c-resume {
     margin-top: 10px;
     flex-direction: column;
     gap: 50px;
   }
-  .section__right_content_description_resume_details {
+  .c-resume__details {
     margin-left: 20px;
-     }
+  }
 }

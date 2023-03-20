@@ -10,38 +10,38 @@ const Portfolio = () => {
   const [tab, setTab] = useState(0);
 
   return (
-    <div className="section__right_content_description_portfolio">
-      <div className="section__right_content_description_portfolio_header">
+    <div className="c-portfolio">
+      <div className="c-portfolio__header">
         {Array.from(allTabs).map((item, index) => (
           <a
             key={index}
             style={{ color: tab === index ? "rgb(250, 191, 48)" : "#000" }}
-            className="section__right_content_description_portfolio_header_tag"
+            className="c-portfolio__tag"
             onClick={() => setTab(index)}
           >
             {item}
           </a>
         ))}
       </div>
-      <div className="section__right_content_description_portfolio_details">
+      <div className="c-portfolio__details">
         {portfolioData.map(
           (item) =>
             Array.from(allTabs)[tab] === item.category && (
               <div
                 key={item.id}
-                className="section__right_content_description_portfolio_details_box"
+                className="c-portfolio__box"
               >
                 <a href={item.url} target="_blank">
                   <img
-                    className="section__right_content_description_portfolio_details_box_photo"
+                    className="c-portfolio__box-photo"
                     src={item.img}
                     alt={item.title}
                   />
-                  <div className="section__right_content_description_portfolio_details_box_overlay"></div>
-                  <div className="section__right_content_description_portfolio_details_box_description">
+                  <div className="c-portfolio__overlay"></div>
+                  <div className="c-portfolio__box-description">
                     <h3>{item.title}</h3>
-                    <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
-                    <div className="section__right_content_description_portfolio_details_box_description_technologies">
+                    <div className="c-portfolio__box-divider"></div>
+                    <div className="c-portfolio__box-technologies">
                       {item.technologies.map((technology, index) => {
                         let colorBg;
                         switch (technology) {
@@ -79,7 +79,7 @@ const Portfolio = () => {
                         return (
                           <span
                             key={index}
-                            className="section__right_content_description_portfolio_details_box_description_technologies_technology"
+                            className="c-portfolio__box-technology"
                             style={{ backgroundColor: colorBg }}
                           >
                             {technology}
@@ -92,7 +92,7 @@ const Portfolio = () => {
                 <a
                   href={item.github_url}
                   target="_blank"
-                  className="section__right_content_description_portfolio_details_box_github"
+                  className="c-portfolio__box-github"
                 >
                   <VscGithub />
                 </a>

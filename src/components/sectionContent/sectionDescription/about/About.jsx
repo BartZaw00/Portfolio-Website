@@ -9,15 +9,15 @@ import "./about.css";
 
 const About = () => {
   return (
-    <>
-      <span className="section__right_content_description_about_subheading">
+    <div className="c-about">
+      <span className="c-about__heading">
         I'm{" "}
-        <span className="section__right_content_description_about_subheading_name-style">
+        <span className="c-about__heading c-about__heading--bold">
           Bartosz Zawadka,
         </span>{" "}
         Frontend Developer
       </span>
-      <p className="section__right_content_description_about_paragraph">
+      <p className="c-about__paragraph">
         I am a 22-year-old 4th year student of Applied Computer Science at the
         Lodz University of Technology, with a strong interest in web
         development. In addition to my academic pursuits, I am also experienced
@@ -25,19 +25,19 @@ const About = () => {
         time, I enjoy playing and watching football, going to the gym and
         playing chess.
       </p>
-      <a className="download-cv-button" href={myCV} download>
-        <FaFileDownload className="download-cv-icon" />
+      <a className="c-about__download-cv-button" href={myCV} download>
+        <FaFileDownload className="c-about__download-cv-icon" />
         Download my CV
       </a>{" "}
-      <div className="skills-section">
+      <div className="c-about__skills-section">
         {skillsData.map((skill) => (
-          <div className="skills">
-            <div className="skills-title">{skill.category}</div>
-            <div className="skills-box">
+          <div className="c-about__skills">
+            <div className="c-about__skills-title">{skill.category}</div>
+            <div className="c-about__skills-box">
               {skill.details.map((item) => {
                 return (
-                  <div key={item.id} className="skill-box">
-                    <div className="skill">
+                  <div key={item.id} className="c-about__skill-box">
+                    <div className="c-about__skill">
                       <img src={item.img} alt="skill" />
                     </div>
                     <span>{item.skill}</span>
@@ -48,7 +48,7 @@ const About = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

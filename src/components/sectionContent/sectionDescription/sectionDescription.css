@@ -1,4 +1,4 @@
-.section__right_content_description {
+.c-section-description {
   margin-left: 30px;
   font-family: "Open Sans", sans-serif;
   display:flex;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .section__right_content_description {
+  .c-section-description {
     margin-left: 0;
   }
 }

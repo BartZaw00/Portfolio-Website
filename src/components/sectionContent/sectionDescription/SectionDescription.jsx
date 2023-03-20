@@ -10,7 +10,7 @@ const SectionDescription = () => {
   const [page, setPage] = useContext(PageContext);
 
   return (
-    <div className="section__right_content_description">
+    <div className="c-section-description">
       {(() => {
         switch (page) {
           case 1:

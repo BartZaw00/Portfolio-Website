@@ -1,17 +1,22 @@
-.section__right_content_description_about_subheading {
+.c-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-about__heading {
   font-size: 40px;
 }
 
-.section__right_content_description_about_subheading_name-style {
+.c-about__heading--bold {
   font-family: "Viga", sans-serif;
   font-weight: 900;
 }
 
-.section__right_content_description_about_paragraph {
+.c-about__paragraph {
   margin: 25px 0;
 }
 
-.download-cv-button {
+.c-about__download-cv-button {
   align-self: center;
   background-color: var(--color-main);
   color: var(--color-btn-text);
@@ -29,26 +34,26 @@
   margin-bottom: 50px;
 }
 
-.download-cv-button:hover {
+.c-about__download-cv-button:hover {
   transform: scale(1.1) translateY(-5px);
 }
 
-.download-cv-icon {
+.c-about__download-cv-icon {
   margin-right: 10px;
   font-size: 25px;
 }
 
-.skills-section {
+.c-about__skills-section {
   display: flex;
   justify-content: space-between;
 }
 
-.skills-title {
+.c-about__skills-title {
   font-size: 40px;
   font-family: "Viga", sans-serif;
 }
 
-.skills {
+.c-about__skills {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -56,20 +61,20 @@
   max-width: 50%;
 }
 
-.skills-box {
+.c-about__skills-box {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.skill-box {
+.c-about__skill-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
 
-.skill {
+.c-about__skill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,38 +87,38 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.skill:hover {
+.c-about__skill:hover {
   transform: translateY(-5px);
 }
 
 @media screen and (max-width: 1300px) {
-  .skills-section {
+  .c-about__skills-section {
     flex-direction: column;
     justify-content: flex-start;
     gap: 30px;
   }
-  .skills {
+  .c-about__skills {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 1300px), screen and (max-height: 650px) {
-  .section__right_content_description_about_subheading {
+  .c-about__heading {
     font-size: 30px;
   }
-  .section__right_content_description_about_paragraph {
+  .c-about__paragraph {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 900px), screen and (max-height: 500px) {
-  .section__right_content_description_about_subheading {
+  .c-about__heading {
     font-size: 25px;
   }
-  .section__right_content_description_about_paragraph {
+  .c-about__paragraph {
     font-size: 13px;
   }
-  .download-cv-button {
+  .c-about__download-cv-button {
     font-size: 15px;
   }
 }

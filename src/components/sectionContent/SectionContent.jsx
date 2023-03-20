@@ -25,8 +25,8 @@ const SectionContent = () => {
   const sectionHeaders = ["", "About us", "Resume", "Portfolio", "Contact"];
 
   return (
-    <div className="section__right">
-      <div className="section__right_content">
+    <div className="c-section-right">
+      <div className="c-section-right__content">
         <SectionHeader />
         <TransitionGroup>
           <CSSTransition

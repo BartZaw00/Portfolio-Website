@@ -1,19 +1,19 @@
-.section__right_content_description_contact_paragraph {
+.c-contact__paragraph {
   font-size: 40px;
 }
 
-.section__right_content_description_contact_paragraph_word-style {
+.c-contact__paragraph--bold {
   font-family: "Montserrat";
   font-weight: 800;
 }
 
-.section__right_content_description_contact_details {
+.c-contact__details {
   margin-top: 70px;
   display: flex;
   gap: 50px;
 }
 
-.section__right_content_description_contact_details_icons {
+.c-contact__icons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   font-size: 6em;
 }
 
-.section__right_content_description_contact_details_detail {
+.c-contact__detail {
   margin-top: 20px;
   flex: 1;
   display: flex;
@@ -31,42 +31,42 @@
 }
 
 @media screen and (max-width: 900px), screen and (max-height: 850px) {
-  .section__right_content_description_contact_paragraph {
+  .c-contact__paragraph {
     font-size: 30px;
   }
 
-  .section__right_content_description_contact_details_icons {
+  .c-contact__icons {
     font-size: 5.3em;
   }
 
-  .section__right_content_description_contact_details_detail {
+  .c-contact__detail {
     font-size: 2em;
   }
 }
 
 @media screen and (max-width: 750px), screen and (max-height: 700px) {
-  .section__right_content_description_contact_details {
+  .c-contact__details {
     gap: 40px;
   }
-  .section__right_content_description_contact_details_icons {
+  .c-contact__icons {
     font-size: 4em;
   }
 
-  .section__right_content_description_contact_details_detail {
+  .c-contact__detail {
     font-size: 1.5em;
     gap: 80px;
   }
 }
 
 @media screen and (max-width: 620px), screen and (max-height: 500px) {
-  .section__right_content_description_contact_details {
+  .c-contact__details {
     gap: 30px;
   }
-  .section__right_content_description_contact_details_icons {
+  .c-contact__icons {
     font-size: 3.5em;
   }
 
-  .section__right_content_description_contact_details_detail {
+  .c-contact__detail {
     font-size: 1em;
     gap: 83px;
   }

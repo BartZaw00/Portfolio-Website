@@ -1,4 +1,4 @@
-.navigation-bar {
+.c-navigation-bar {
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -13,13 +13,13 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .navigation-bar {
+  .c-navigation-bar {
     display: none;
   }
 }
 
 @media screen and (max-height: 450px) {
-  .navigation-bar {
+  .c-navigation-bar {
     gap: 20px;
   }
 }

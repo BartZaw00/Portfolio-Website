@@ -15,7 +15,7 @@ const Menu = ({ category }) => {
   return (
     <a
       style={{ color: page === category?.id ? "white" : "black" }}
-      className="section__left_menu_tag"
+      className="c-sidebar__menu-tag"
       onClick={() => setPage(category?.id)}
     >
       {category?.name}
@@ -27,16 +27,16 @@ const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="section__left">
-      <img src={cvSectionCard} alt="profile-photo" />
-      <div className="section__left_menu">
-        <MdCircle className="section__left_menu_icon" />
+    <div className="c-sidebar">
+      <img className="c-sidebar__profile-photo" src={cvSectionCard} alt="profile-photo" />
+      <div className="c-sidebar__menu">
+        <MdCircle className="c-sidebar__icon" />
         {categories.map((category) => {
           return <Menu key={category.id} category={category} />;
         })}
-        <MdCircle className="section__left_menu_icon" />
+        <MdCircle className="c-sidebar__icon" />
       </div>
-      <div className="section__left_menu-mobile">
+      <div className="c-sidebar__menu-mobile">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
@@ -51,7 +51,7 @@ const Sidebar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="section__left_menu-mobile_container scale-up-center">
+          <div className="c-sidebar__mobile-container scale-up-center">
             {categories.map((category) => {
               return <Menu key={category.id} category={category} />;
             })}

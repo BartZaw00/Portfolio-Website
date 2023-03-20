@@ -1,4 +1,4 @@
-.section__left {
+.c-sidebar {
   position: fixed;
   min-width: 160px;
   width: 20vw;
@@ -9,11 +9,11 @@
   background-color: var(--color-main);
 }
 
-.section__left img {
+.c-sidebar__profile-photo {
   width: 100%;
 }
 
-.section__left_menu {
+.c-sidebar__menu {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -21,23 +21,23 @@
   align-items: center;
 }
 
-.section__left_menu_tag {
+.c-sidebar__menu-tag {
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 
-.section__left_menu-mobile {
+.c-sidebar__menu-mobile {
   display: none;
   position: relative;
 }
 
-.section__left_menu-mobile svg {
+.c-sidebar__menu-mobile svg {
   margin-right: 20px;
   cursor: pointer;
 }
 
-.section__left_menu-mobile_container {
+.c-sidebar__mobile-container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -83,58 +83,58 @@
 }
 
 @media screen and (max-width: 1300px), screen and (max-height: 850px) {
-  .section__left_menu {
+  .c-sidebar__menu {
     gap: 0;
   }
-  .section__left_menu_tag {
+  .c-sidebar__menu-tag {
     font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .section__left {
+  .c-sidebar {
     position: relative;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
-  .section__left img {
+  .c-sidebar img {
     max-width: 25vw;
   }
-  .section__left_menu {
+  .c-sidebar__menu {
     display: none;
   }
-  .section__left_menu_icon {
+  .c-sidebar__icon {
     display: none;
   }
-  .section__left_menu-mobile {
+  .c-sidebar__menu-mobile {
     display: flex;
   }
 }
 
 @media (max-height: 700px) {
-  .section__left_menu_tag {
+  .c-sidebar__menu-tag {
     font-size: 17px;
   }
-  .section__left_menu_icon {
+  .c-sidebar__icon {
     font-size: 12px;
   }
 }
 
 @media (max-height: 500px) {
-  .section__left_menu_tag {
+  .c-sidebar__menu-tag {
     font-size: 15px;
   }
-  .section__left_menu_icon {
+  .c-sidebar__icon {
     font-size: 10px;
   }
 }
 
 @media screen and (max-height: 450px) {
-  .section__left_menu_tag {
+  .c-sidebar__menu-tag {
     font-size: 12px;
   }
-  .section__left_menu_icon {
+  .c-sidebar__icon {
     display: none;
   }
 }

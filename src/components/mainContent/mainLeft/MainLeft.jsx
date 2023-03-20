@@ -9,30 +9,30 @@ const MainLeft = () => {
   const [page, setPage] = useContext(PageContext);
 
   return (
-    <div className="main__left">
-      <div className="main__left_header">
-        <h2 className="main__left_header_subheading">HI THERE!</h2>
+    <div className="c-main-left">
+      <div className="c-main-left__header">
+        <h2 className="c-main-left__subheading">HI THERE!</h2>
         <img
-          className="main__left_header_photo-mobile"
+          className="c-main-left__photo-mobile"
           src={cvMainCard}
           alt="profile-photo"
         />
-        <h1 className="main__left_header_heading">
+        <h1 className="c-main-left__heading">
           I'M{" "}
-          <span className="main__left_header_heading_name-style">BARTEK</span>
+          <span className="c-main-left__heading--name">BARTEK</span>
         </h1>
-        <span className="main__left_header_position">FRONTEND DEVELOPER</span>
-        <p className="main__left_header_paragraph">
+        <span className="c-main-left__position">FRONTEND DEVELOPER</span>
+        <p className="c-main-left__paragraph">
           I am a 4th year student of Applied Computer Science at the Lodz
           University of Technology. Mainly interested in web development. I am a
           person open to new challenges with sales and customer service
           experience.
         </p>
-        <button className="main__left_header_btn" onClick={() => setPage(1)}>
+        <button className="c-main-left__btn" onClick={() => setPage(1)}>
           MORE ABOUT ME
         </button>
       </div>
-      <img className="main__left_photo" src={cvMainCard} alt="profile-photo" />
+      <img className="c-main-left__photo" src={cvMainCard} alt="profile-photo" />
     </div>
   );
 };

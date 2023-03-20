@@ -4,7 +4,7 @@ import "./mainRight.css"
 
 const MainRight = () => {
   return (
-    <div className="main__right"></div>
+    <div className="c-main-right"></div>
   )
 }
 

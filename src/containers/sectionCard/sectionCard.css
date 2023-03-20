@@ -1,10 +1,10 @@
-.section {
+.c-section-card {
   min-height: 100vh;
   display: flex;
 }
 
 @media (max-width: 768px) {
-  .section {
+  .c-section-card {
     flex-direction: column;
   }
 }

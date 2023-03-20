@@ -6,7 +6,7 @@ import MainRight from "./mainRight/MainRight";
 
 const MainContent = () => {
   return (
-    <div className="main">
+    <div className="c-main-content">
       <MainLeft />
       <MainRight />
     </div>

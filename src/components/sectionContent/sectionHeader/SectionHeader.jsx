@@ -8,8 +8,8 @@ const SectionHeader = () => {
   const [page, setPage] = useContext(PageContext);
 
   return (
-    <div className="section__right_content_heading">
-      <h1 className="section__right_content_heading_header">
+    <div className="c-section-header">
+      <h1 className="c-section-header__heading">
         {categories[page].name}
       </h1>
     </div>

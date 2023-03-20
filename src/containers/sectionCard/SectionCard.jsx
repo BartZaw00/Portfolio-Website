@@ -5,7 +5,7 @@ import "./sectionCard.css";
 
 const SectionCard = () => {
   return (
-    <div className="section">
+    <div className="c-section-card">
       <Sidebar />
       <SectionContent />
     </div>

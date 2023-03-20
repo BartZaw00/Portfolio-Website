@@ -1,8 +1,8 @@
-.section__right_content_heading {
+.c-section-header {
   border: 3px dotted var(--color-divider);
 }
 
-.section__right_content_heading_header {
+.c-section-header__heading {
   padding: 20px 0;
   text-align: center;
   border: 3px dotted var(--color-divider);
@@ -14,31 +14,31 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .section__right_content_heading_header {
+  .c-section-header__heading {
     font-size: 75px;
   }
 }
 
 @media screen and (max-width: 950px) {
-  .section__right_content_heading_header {
+  .c-section-header__heading {
     font-size: 60px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .section__right_content_heading_header {
+  .c-section-header__heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .section__right_content_heading_header {
+  .c-section-header__heading {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .section__right_content_heading_header {
+  .c-section-header__heading {
     font-size: 20px;
   }
 }
