@@ -7,7 +7,7 @@ import "./portfolio.css";
 const allTabs = new Set(portfolioData.map((item) => item.category));
 
 const Portfolio = () => {
-  const [tab, setTab] = useState(1);
+  const [tab, setTab] = useState(0);
 
   return (
     <div className="section__right_content_description_portfolio">
@@ -43,17 +43,41 @@ const Portfolio = () => {
                     <div className="section__right_content_description_portfolio_details_box_description_divider"></div>
                     <div className="section__right_content_description_portfolio_details_box_description_technologies">
                       {item.technologies.map((technology, index) => {
-                        let colorText;
-                        if (technology === "REACT") colorText = "#61DBFB";
-                        if (technology === "JAVASCRIPT") colorText = "#EBA834";
-                        if (technology === "HTML") colorText = "#E34C26";
-                        if (technology === "CSS") colorText = "#264DE4";
-                        if (technology === "SCSS") colorText = "#CC6699";
+                        let colorBg;
+                        switch (technology) {
+                          case "REACT":
+                            colorBg = "#61DBFB";
+                            break;
+                          case "JAVASCRIPT":
+                            colorBg = "#EBA834";
+                            break;
+                          case "HTML":
+                            colorBg = "#E34C26";
+                            break;
+                          case "CSS":
+                            colorBg = "#264DE4";
+                            break;
+                          case "SCSS":
+                            colorBg = "#CC6699";
+                            break;
+                          case "TAILWIND":
+                            colorBg = "#38BDF8";
+                            break;
+                          case ".NET":
+                            colorBg = "#512BD4";
+                            break;
+                          case "SQL":
+                            colorBg = "#20BF55";
+                            break;
+                          default:
+                            colorBg = "#000";
+                        }
+
                         return (
                           <span
                             key={index}
                             className="section__right_content_description_portfolio_details_box_description_technologies_technology"
-                            style={{ backgroundColor: colorText }}
+                            style={{ backgroundColor: colorBg }}
                           >
                             {technology}
                           </span>
