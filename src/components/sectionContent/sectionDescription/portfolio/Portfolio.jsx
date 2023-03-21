@@ -39,7 +39,7 @@ const Portfolio = () => {
                   />
                   <div className="c-portfolio__overlay"></div>
                   <div className="c-portfolio__box-description">
-                    <h3>{item.title}</h3>
+                    <h3 className="c-portfolio__box-title">{item.title}</h3>
                     <div className="c-portfolio__box-divider"></div>
                     <div className="c-portfolio__box-technologies">
                       {item.technologies.map((technology, index) => {

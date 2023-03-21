@@ -4,46 +4,37 @@ import SectionHeader from "./sectionHeader/SectionHeader";
 import SectionDescription from "./sectionDescription/SectionDescription";
 
 import "./sectionContent.css";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 import { PageContext } from "../../App";
+import { Element } from "react-scroll";
 
-function usePrevious(value) {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  }, [value]);
-  return ref.current;
-}
 
-const SectionContent = () => {
+// function usePrevious(value) {
+//   const ref = useRef();
+//   useEffect(() => {
+//     ref.current = value;
+//   }, [value]);
+//   return ref.current;
+// }
+
+const SectionContent = ({ section }) => {
   const [page, setPage] = useContext(PageContext);
-  const prevPage = usePrevious(page);
+  // const prevPage = usePrevious(page);
 
-  const animationClass =
-     page > prevPage ? "slide-right" : "slide-left";
+  // const animationClass = page > prevPage ? "slide-right" : "slide-left";
 
   const sectionHeaders = ["", "About us", "Resume", "Portfolio", "Contact"];
 
+
   return (
-    <div className="c-section-right">
-      <div className="c-section-right__content">
-        <SectionHeader />
-        <TransitionGroup>
-          <CSSTransition
-            key={sectionHeaders[page]}
-            classNames={{
-              enter: `slide-right-enter ${animationClass}-enter`,
-              enterActive: `slide-right-enter-active ${animationClass}-enter-active`,
-              exit: `slide-right-exit ${animationClass}-exit`,
-              exitActive: `slide-right-exit-active ${animationClass}-exit-active`,
-            }}
-            timeout={{ enter: 500 }}
-          >
-            <SectionDescription />
-          </CSSTransition>
-        </TransitionGroup>
+    <Element name={section}>
+      <div className="c-section-right">
+        <div className="c-section-right__content">
+          <SectionHeader section={section} />
+          <SectionDescription section={section} />
+        </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

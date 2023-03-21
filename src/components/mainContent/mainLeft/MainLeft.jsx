@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-scroll";
 import { PageContext } from "../../../App";
 
 import cvMainCard from "../../../assets/cv-main-card.png";
@@ -18,8 +19,7 @@ const MainLeft = () => {
           alt="profile-photo"
         />
         <h1 className="c-main-left__heading">
-          I'M{" "}
-          <span className="c-main-left__heading--name">BARTEK</span>
+          I'M <span className="c-main-left__heading--name">BARTEK</span>
         </h1>
         <span className="c-main-left__position">FRONTEND DEVELOPER</span>
         <p className="c-main-left__paragraph">
@@ -28,11 +28,23 @@ const MainLeft = () => {
           person open to new challenges with sales and customer service
           experience.
         </p>
-        <button className="c-main-left__btn" onClick={() => setPage(1)}>
-          MORE ABOUT ME
-        </button>
+        <Link
+          to="ABOUT ME"
+          smooth={true}
+          duration={500}
+          spy={true}
+          activeClass="active"
+        >
+          <button className="c-main-left__btn" onClick={() => setPage(1)}>
+            MORE ABOUT ME
+          </button>
+        </Link>
       </div>
-      <img className="c-main-left__photo" src={cvMainCard} alt="profile-photo" />
+      <img
+        className="c-main-left__photo"
+        src={cvMainCard}
+        alt="profile-photo"
+      />
     </div>
   );
 };

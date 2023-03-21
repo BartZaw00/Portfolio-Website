@@ -21,7 +21,7 @@
 }
 
 .c-portfolio__box {
-  flex-basis: 35%;
+  flex-basis: 40%;
   position: relative;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -120,11 +120,13 @@
 
 @media screen and (max-width: 1300px) {
   .c-portfolio__box {
-    flex-basis: 45%;
+    flex-basis: 100%;
   }
-
-  .c-portfolio__box-description > h3 {
-    display: block;
+  .c-portfolio__box-title {
+    font-size: 30px;
+  }
+  .c-portfolio__box:hover .c-portfolio__box-description {
+    bottom: 30%;
   }
 }
 
@@ -147,13 +149,16 @@
   .c-portfolio__details {
     padding: 50px 0 0 0;
   }
-  .c-portfolio__box {
-    flex-basis: 100%;
-  }
 }
 
 @media screen and (max-width: 650px) {
+  .c-portfolio__box-title {
+    font-size: 20px;
+  }
   .c-portfolio__tag {
     font-size: 18px;
+  }
+  .c-portfolio__box:hover .c-portfolio__box-description {
+    bottom: 25%;
   }
 }

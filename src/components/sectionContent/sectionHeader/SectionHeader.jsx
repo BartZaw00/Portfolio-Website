@@ -1,17 +1,16 @@
 import React, { useContext } from "react";
 import { PageContext } from "../../../App";
 
-import { categories } from "../../../utils/data";
 import "./sectionHeader.css";
 
-const SectionHeader = () => {
+const SectionHeader = ({ section }) => {
   const [page, setPage] = useContext(PageContext);
+
+
 
   return (
     <div className="c-section-header">
-      <h1 className="c-section-header__heading">
-        {categories[page].name}
-      </h1>
+      <h1 className="c-section-header__heading">{section}</h1>
     </div>
   );
 };

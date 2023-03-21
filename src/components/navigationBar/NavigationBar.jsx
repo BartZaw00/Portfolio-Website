@@ -7,37 +7,72 @@ import { FaHome } from "react-icons/fa";
 import { PageContext } from "../../App";
 
 import "./navigationBar.css";
+import { Link } from "react-scroll";
 
 const NavigationBar = () => {
-  const [page, setPage] = useContext(PageContext)
+  const [page, setPage] = useContext(PageContext);
 
   return (
     <div className="c-navigation-bar">
-      <FaHome
-        color={page === 0 ? "white" : "black"}
-        cursor="pointer"
+      <Link
+        to="HOME"
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass="active"
         onClick={() => setPage(0)}
-      />
-      <BsFillPersonFill
-        color={page === 1 ? "white" : "black"}
-        cursor="pointer"
+      >
+        <FaHome color={page === 0 ? "white" : "black"} cursor="pointer" />
+      </Link>
+      <Link
+        to="ABOUT ME"
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass="active"
         onClick={() => setPage(1)}
-      />
-      <MdWork
-        color={page === 2 ? "white" : "black"}
-        cursor="pointer"
+      >
+        <BsFillPersonFill
+          color={page === 1 ? "white" : "black"}
+          cursor="pointer"
+        />
+      </Link>
+      <Link
+        to="RESUME"
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass="active"
         onClick={() => setPage(2)}
-      />
-      <MdDesignServices
-        color={page === 3 ? "white" : "black"}
-        cursor="pointer"
+      >
+        <MdWork color={page === 2 ? "white" : "black"} cursor="pointer" />
+      </Link>
+      <Link
+        to="PORTFOLIO"
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass="active"
         onClick={() => setPage(3)}
-      />
-      <MdContactPhone
-        color={page === 4 ? "white" : "black"}
-        cursor="pointer"
+      >
+        <MdDesignServices
+          color={page === 3 ? "white" : "black"}
+          cursor="pointer"
+        />
+      </Link>
+      <Link
+        to="CONTACT"
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass="active"
         onClick={() => setPage(4)}
-      />
+      >
+        <MdContactPhone
+          color={page === 4 ? "white" : "black"}
+          cursor="pointer"
+        />
+      </Link>
     </div>
   );
 };

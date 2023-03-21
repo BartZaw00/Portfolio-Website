@@ -1,12 +1,14 @@
 .c-sidebar {
-  position: fixed;
+  position: sticky;
+  top:0;
   min-width: 160px;
   width: 20vw;
-  height: 100%;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-main);
+  z-index: 1000;
 }
 
 .c-sidebar__profile-photo {
@@ -93,7 +95,7 @@
 
 @media (max-width: 768px) {
   .c-sidebar {
-    position: relative;
+    position: sticky;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
