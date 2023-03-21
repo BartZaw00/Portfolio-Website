@@ -7,7 +7,7 @@ import "./sectionContent.css";
 
 import { PageContext } from "../../App";
 
-const SectionContent = ({ section }) => {
+const SectionContent = ({ section,url }) => {
   const [page, setPage] = useContext(PageContext);
   const ref = useRef(null);
 
@@ -47,7 +47,7 @@ const SectionContent = ({ section }) => {
   }, [ref, page]);
 
   return (
-    <div ref={ref} id={section} className="c-section-right">
+    <div ref={ref} id={url} className="c-section-right">
       <div className="c-section-right__content">
         <SectionHeader section={section} />
         <SectionDescription section={section} />

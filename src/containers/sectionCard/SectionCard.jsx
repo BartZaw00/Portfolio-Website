@@ -11,7 +11,7 @@ const SectionCard = ({offset}) => {
       <Sidebar offset={offset}/>
       <div className="c-section-card__content">
         {categories.slice(1).map((category) => {
-          return <SectionContent key={category.id} section={category.name} />;
+          return <SectionContent key={category.id} section={category.name} url={category.url}/>;
         })}
       </div>
     </div>

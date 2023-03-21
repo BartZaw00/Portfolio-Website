@@ -22,11 +22,11 @@ import wordpress_logo from "../assets/wordpress_logo.svg";
 import cplusplus_logo from "../assets/cplusplus_logo.svg";
 
 export const categories = [
-  { id: 0, name: "HOME", icon: "" },
-  { id: 1, name: "ABOUT ME", icon: "" },
-  { id: 2, name: "RESUME", icon: "" },
-  { id: 3, name: "PORTFOLIO", icon: "" },
-  { id: 4, name: "CONTACT", icon: "" },
+  { id: 0, name: "HOME", url: "home", icon: "" },
+  { id: 1, name: "ABOUT ME", url: "about", icon: "" },
+  { id: 2, name: "RESUME", url: "resume", icon: "" },
+  { id: 3, name: "PORTFOLIO", url: "portfolio", icon: "" },
+  { id: 4, name: "CONTACT", url: "contact", icon: "" },
 ];
 
 export const skillsData = [

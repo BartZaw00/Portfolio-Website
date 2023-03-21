@@ -8,7 +8,7 @@ import MainRight from "./mainRight/MainRight";
 const MainContent = ({ offset }) => {
   return (
     // <Element name="HOME">
-    <div id="HOME" className="c-main-content">
+    <div id="home" className="c-main-content">
       <MainLeft offset={offset} />
       <MainRight />
     </div>

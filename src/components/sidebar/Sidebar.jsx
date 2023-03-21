@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { MdCircle } from "react-icons/md";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 
@@ -25,7 +26,7 @@ const Menu = ({ category, offset, setToggleMenu }) => {
         <Link
           style={{ color: page === category?.id ? "white" : "black" }}
           className="c-sidebar__menu-tag"
-          to={category.name}
+          to={category.url}
           smooth={true}
           duration={500}
           spy={true}
@@ -37,7 +38,7 @@ const Menu = ({ category, offset, setToggleMenu }) => {
         </Link>
       ) : (
         <a
-          href={`#${category.name}`}
+          href={`#${category.url}`}
           style={{ color: page === category?.id ? "white" : "black" }}
           className="c-sidebar__menu-tag"
         >

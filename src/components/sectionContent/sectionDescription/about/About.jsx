@@ -4,8 +4,6 @@ import { FaFileDownload } from "react-icons/fa";
 import myCV from "../../../../assets/bzawadka-CV.pdf";
 
 import { skillsData } from "../../../../utils/data";
-import SectionHeader from "../../sectionHeader/SectionHeader";
-import SectionDescription from "../SectionDescription";
 
 import "./about.css";
 

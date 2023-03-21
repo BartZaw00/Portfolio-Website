@@ -13,25 +13,25 @@ const NavigationBar = () => {
 
   return (
     <div className="c-navigation-bar">
-      <a href="#HOME">
+      <a href="#home">
         <FaHome color={page === 0 ? "white" : "black"} cursor="pointer" />
       </a>
-      <a href="#ABOUT ME">
+      <a href="#about">
         <BsFillPersonFill
           color={page === 1 ? "white" : "black"}
           cursor="pointer"
         />
       </a>
-      <a href="#RESUME">
+      <a href="#resume">
         <MdWork color={page === 2 ? "white" : "black"} cursor="pointer" />
       </a>
-      <a href="#PORTFOLIO">
+      <a href="#portfolio">
         <MdDesignServices
           color={page === 3 ? "white" : "black"}
           cursor="pointer"
         />
       </a>
-      <a href="#CONTACT">
+      <a href="#contact">
         <MdContactPhone
           color={page === 4 ? "white" : "black"}
           cursor="pointer"

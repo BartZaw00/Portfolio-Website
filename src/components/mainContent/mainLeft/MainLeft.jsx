@@ -6,7 +6,7 @@ import cvMainCard from "../../../assets/cv-main-card.png";
 
 import "./mainLeft.css";
 
-const MainLeft = ({offset}) => {
+const MainLeft = ({ offset }) => {
   const [page, setPage] = useContext(PageContext);
 
   return (
@@ -30,7 +30,7 @@ const MainLeft = ({offset}) => {
         </p>
         {window.innerWidth <= 768 ? (
           <Link
-            to={"ABOUT ME"}
+            to="about"
             smooth={true}
             duration={500}
             spy={true}
@@ -41,7 +41,7 @@ const MainLeft = ({offset}) => {
             <button className="c-main-left__btn">MORE ABOUT ME</button>
           </Link>
         ) : (
-          <a href="#ABOUT ME">
+          <a href="#about">
             <button className="c-main-left__btn">MORE ABOUT ME</button>
           </a>
         )}
