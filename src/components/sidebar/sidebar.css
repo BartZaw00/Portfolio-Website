@@ -101,7 +101,7 @@
     justify-content: space-between;
   }
   .c-sidebar img {
-    max-width: 25vw;
+    max-width: 25%;
   }
   .c-sidebar__menu {
     display: none;

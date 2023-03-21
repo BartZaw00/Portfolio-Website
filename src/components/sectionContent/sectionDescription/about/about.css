@@ -97,6 +97,9 @@
     justify-content: flex-start;
     gap: 30px;
   }
+  .c-about__skills-box {
+    justify-content: center;
+  }
   .c-about__skills {
     max-width: 100%;
   }

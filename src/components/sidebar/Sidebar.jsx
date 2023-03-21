@@ -9,47 +9,46 @@ import { PageContext } from "../../App";
 
 import { categories } from "../../utils/data";
 import "./sidebar.css";
-
 import { Link } from "react-scroll";
 
-const Menu = ({ category }) => {
+const Menu = ({ category, offset, setToggleMenu }) => {
   const [page, setPage] = useContext(PageContext);
-  const [offset, setOffset] = useState(0);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 400) setOffset(-50);
-      if (window.innerWidth < 600) setOffset(-80);
-      if (window.innerWidth < 768) setOffset(-100);
-      else setOffset(0);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const handleClick = () => {
+    setToggleMenu(false);
+    setPage(category?.id);
+  };
 
   return (
-    <Link
-      style={{ color: page === category?.id ? "white" : "black" }}
-      className="c-sidebar__menu-tag"
-      to={category.name}
-      smooth={true}
-      duration={500}
-      spy={true}
-      activeClass="active"
-      offset={offset}
-      onClick={() => setPage(category?.id)}
-    >
-      {category?.name}
-    </Link>
+    <>
+      {window.innerWidth <= 768 ? (
+        <Link
+          style={{ color: page === category?.id ? "white" : "black" }}
+          className="c-sidebar__menu-tag"
+          to={category.name}
+          smooth={true}
+          duration={500}
+          spy={true}
+          activeClass="active"
+          offset={offset}
+          onClick={handleClick}
+        >
+          {category?.name}
+        </Link>
+      ) : (
+        <a
+          href={`#${category.name}`}
+          style={{ color: page === category?.id ? "white" : "black" }}
+          className="c-sidebar__menu-tag"
+        >
+          {category?.name}
+        </a>
+      )}
+    </>
   );
 };
 
-const Sidebar = () => {
+const Sidebar = ({ offset }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -83,7 +82,14 @@ const Sidebar = () => {
         {toggleMenu && (
           <div className="c-sidebar__mobile-container scale-up-center">
             {categories.map((category) => {
-              return <Menu key={category.id} category={category} />;
+              return (
+                <Menu
+                  key={category.id}
+                  category={category}
+                  offset={offset}
+                  setToggleMenu={setToggleMenu}
+                />
+              );
             })}
           </div>
         )}

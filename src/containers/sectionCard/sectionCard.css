@@ -1,10 +1,33 @@
 .c-section-card {
   min-height: 100vh;
   display: flex;
+  /* scroll-snap-align: start; */
 }
 
 .c-section-card__content {
-  flex:1;
+  flex: 1;
+  /* scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; */
+}
+
+@media screen and (min-width: 769px) {
+  .c-section-card {
+    scroll-snap-align: start;
+  }
+  .c-section-card__content {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1300px) {
+  .c-section-card__content {
+    scroll-snap-type: y proximity;
+  }
 }
 
 @media (max-width: 768px) {

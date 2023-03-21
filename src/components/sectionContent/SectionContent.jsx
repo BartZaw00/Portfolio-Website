@@ -6,35 +6,53 @@ import SectionDescription from "./sectionDescription/SectionDescription";
 import "./sectionContent.css";
 
 import { PageContext } from "../../App";
-import { Element } from "react-scroll";
-
-
-// function usePrevious(value) {
-//   const ref = useRef();
-//   useEffect(() => {
-//     ref.current = value;
-//   }, [value]);
-//   return ref.current;
-// }
 
 const SectionContent = ({ section }) => {
   const [page, setPage] = useContext(PageContext);
-  // const prevPage = usePrevious(page);
+  const ref = useRef(null);
 
-  // const animationClass = page > prevPage ? "slide-right" : "slide-left";
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          switch (section) {
+            case "ABOUT ME":
+              setPage(1);
+              break;
+            case "RESUME":
+              setPage(2);
+              break;
+            case "PORTFOLIO":
+              setPage(3);
+              break;
+            case "CONTACT":
+              setPage(4);
+              break;
+            default:
+          }
+        }
+      },
+      { threshold: 0.5 }
+    );
 
-  const sectionHeaders = ["", "About us", "Resume", "Portfolio", "Contact"];
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref, page]);
 
   return (
-    <Element name={section}>
-      <div className="c-section-right">
-        <div className="c-section-right__content">
-          <SectionHeader section={section} />
-          <SectionDescription section={section} />
-        </div>
+    <div ref={ref} id={section} className="c-section-right">
+      <div className="c-section-right__content">
+        <SectionHeader section={section} />
+        <SectionDescription section={section} />
       </div>
-    </Element>
+    </div>
   );
 };
 
