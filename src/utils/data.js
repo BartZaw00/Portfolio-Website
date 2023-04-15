@@ -200,20 +200,6 @@ export const portfolioData = [
   },
   {
     id: 7,
-    category: "JAVASCRIPT",
-    img: js_3,
-    title: "Calculator App",
-    description: "A calculator that allows to do several math operations",
-    technologies: [
-      { id: 1, name: "JAVASCRIPT" },
-      { id: 2, name: "HTML" },
-      { id: 3, name: "CSS" },
-    ],
-    url: "https://calculator-app-bartzaw00.netlify.app",
-    github_url: "https://github.com/BartZaw00/JS-Projects/tree/main/calculator",
-  },
-  {
-    id: 8,
     category: "HTML + CSS",
     img: html_css_2,
     title: "Three Benefits Section",
@@ -226,7 +212,7 @@ export const portfolioData = [
     github_url: "https://github.com/BartZaw00/Three-Benefits-Section",
   },
   {
-    id: 9,
+    id: 8,
     category: "HTML + CSS",
     img: html_css_3,
     title: "Order Summary Section",
@@ -239,7 +225,7 @@ export const portfolioData = [
     github_url: "https://github.com/BartZaw00/Order-Summary",
   },
   {
-    id: 10,
+    id: 9,
     category: "HTML + CSS",
     img: html_css_4,
     title: "Nike Order Summary Section",
