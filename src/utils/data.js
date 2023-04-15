@@ -113,7 +113,7 @@ export const portfolioData = [
     id: 1,
     category: "REACT",
     img: react_1,
-    title: "SportBook (in progress)",
+    title: "SportBook App",
     description: "A web application supporting reservation of sport facilities",
     technologies: [
       { id: 1, name: "REACT" },
