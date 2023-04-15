@@ -4,7 +4,6 @@ import html_css_3 from "../assets/html_css_3.png";
 import html_css_4 from "../assets/html_css_4.png";
 import js_1 from "../assets/js_1.png";
 import js_2 from "../assets/js_2.png";
-import js_3 from "../assets/js_3.png";
 import js_4 from "../assets/js_4.png";
 import react_1 from "../assets/react_1.png";
 import react_2 from "../assets/react_2.png";
