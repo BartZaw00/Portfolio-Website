@@ -108,21 +108,26 @@ const Portfolio = () => {
                             case ".NET":
                               colorBg = "#512BD4";
                               break;
+                            case "JWT":
+                              colorBg = "#00C853";
+                              break;
                             case "SQL":
-                              colorBg = "#20BF55";
+                              colorBg = "#098231";
                               break;
                             default:
                               colorBg = "#000";
                           }
 
                           return (
-                            <span
-                              key={technology.id}
-                              className="c-portfolio__box-technology"
-                              style={{ backgroundColor: colorBg }}
-                            >
-                              {technology.name}
-                            </span>
+                            <>
+                              <span
+                                key={technology.id}
+                                className="c-portfolio__box-technology"
+                                style={{ backgroundColor: colorBg }}
+                              >
+                                {technology.name}
+                              </span>
+                            </>
                           );
                         })}
                       </div>

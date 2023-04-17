@@ -81,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -115,6 +116,18 @@
 @media screen and (max-width: 1500px) {
   .c-portfolio__box-description {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1750px) and (min-width: 1300px) {
+  .c-portfolio__box:hover .c-portfolio__box-description {
+    bottom: 40%;
+  }
+  .c-portfolio__box-divider {
+    display: none;
+  }
+  .c-portfolio__box-technologies {
+    display: none;
   }
 }
 
@@ -160,5 +173,17 @@
   }
   .c-portfolio__box:hover .c-portfolio__box-description {
     bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .c-portfolio__box:hover .c-portfolio__box-description {
+    bottom: 40%;
+  }
+  .c-portfolio__box-divider {
+    display: none;
+  }
+  .c-portfolio__box-technologies {
+    display: none;
   }
 }
