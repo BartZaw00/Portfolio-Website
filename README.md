@@ -5,6 +5,5 @@
   <li>JavaScript</li>
   <li>HTML</li>
   <li>CSS</li>
-  <li>REST API</li>
 </ul>
 <img src="https://res.cloudinary.com/dbkm7uvzx/image/upload/v1681756417/react_2_t6az8z.png" alt="My Portfolio App">
